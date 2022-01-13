@@ -99,8 +99,9 @@
   //
   $(document).on("change", ".tech_records", function () {
     var tech_id = $(this).val();
-    // var homeurl = 'https://droroscope.com/admin_2019';
-    var homeurl = "http://doctor_admin.com/";
+    var homeurl = "https://droroscope.com/admin_2019";
+    // var homeurl = "http://doctor_admin.com/";
+    // var homeurl = "http://doctor_admin.com/doctor_admin/";
     if (tech_id != "-1") {
       $.ajax({
         type: "POST",

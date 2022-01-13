@@ -278,42 +278,46 @@ if (true || isset($_SESSION['user_sess']) && $is_admin == "dr_admin_yes" . date(
                                                 $url = substr($img->url, 1, strlen($img->url));
                                                 $name = substr($img->url, 2, strlen($img->url));
                                                 $img_link = $rest_url . '/api/v2/files/' . $url . '?api_key=' . $api_key . '&session_token=' . $user_sess_tok;
-                                                // echo '<div class="dr_old_image"><a href="' . $loadrecords::HOMEURL . '/includes/image_download.php?url=' . $img_link . '"><img src = "' . $img_link . '" class = "img-thumbnail" width = "300" height = "300"></a><span class="">' . $name . '</span></div>';
+                                                echo '<div class="dr_old_image"><a href="' . $loadrecords::HOMEURL . '/includes/image_download.php?url=' . $img_link . '"><img src = "' . $img_link . '" class = "img-thumbnail" width = "300" height = "300"></a><span class="">' . $name . '</span></div>';
                                             }
                                         }
                                         ?>
                                     </div>
-                                    <?php 
-                                    
-                                    // $url = $rest_url . '/api/v2/mysqldb/_table/patient_info/' . $patient_id . '?fields=*&related=patient_record_by_id%2Cimageurls_by_patient_id';
-                                    // $query_str = parse_url($url, PHP_URL_QUERY);
-                                    // parse_str($query_str, $query_params);
-                                    // print_r($query_params); 
-                                    
-                                    ?>
-
-                                    <?php
-                                    // echo $patient_info_arr->teethData;
-                                    // exit;
-                                    // JSON.stringify($patient_info_arr->teethData,null,'\t')                                    
-                                    ?>
-                                    <iframe id="imdb" src='login_params.php?teethdata=<?php print_r(json_encode($patient_info_arr->teethData))?>&mouthData=<?php print_r(json_encode($patient_info_arr->mouthdata))?>'style="height:500px;"></iframe>
-                                    
-                                    <input type="file" name="dr_uploadfile" id="dr_uploadfile" accept="image/x-png,image/jpeg" multiple />
                                 </div>
-                                <div class="dr-upload-image-wrap"></div>
-                                <div class="dr-webcan-image-wrap"></div>
-                                <img src="../assets/images/camera.png" alt="cameraicon" class="dr-takephoto">
-                                <input id="capturebtn" class="dr-snap btn btn-success" style="display:none;" value="Take a Photo">
-                                <div class="sumit_form_wrap"><a href="javascript:void(0)" class="sumit_form">Submit</a></div>
+                                <?php
 
-                            </form>
+                                // $url = $rest_url . '/api/v2/mysqldb/_table/patient_info/' . $patient_id . '?fields=*&related=patient_record_by_id%2Cimageurls_by_patient_id';
+                                // $query_str = parse_url($url, PHP_URL_QUERY);
+                                // parse_str($query_str, $query_params);
+                                // print_r($query_params); 
+
+                                ?>
+
+                                <?php
+                                // echo $patient_info_arr->teethData;
+                                // exit;
+                                // JSON.stringify($patient_info_arr->teethData,null,'\t')                                    
+                                ?>
+                                <div class="card card-body bg-light">
+                                    <h4>Cancer Form</h4>
+                                    <iframe id="imdb" src='login_params.php?teethdata=<?php print_r(json_encode($patient_info_arr->teethData)) ?>&mouthData=<?php print_r(json_encode($patient_info_arr->mouthdata)) ?>' style="height:600px;"></iframe>
+                                </div>
+
+                                <input type="file" name="dr_uploadfile" id="dr_uploadfile" accept="image/x-png,image/jpeg" multiple />
                         </div>
+                        <div class="dr-upload-image-wrap"></div>
+                        <div class="dr-webcan-image-wrap"></div>
+                        <img src="../assets/images/camera.png" alt="cameraicon" class="dr-takephoto">
+                        <input id="capturebtn" class="dr-snap btn btn-success" style="display:none;" value="Take a Photo">
+                        <div class="sumit_form_wrap"><a href="javascript:void(0)" class="sumit_form">Submit</a></div>
+
+                        </form>
                     </div>
-                <?php } else { ?>
-                    <div>Select patient</div>
-                <?php } ?>
             </div>
+        <?php } else { ?>
+            <div>Select patient</div>
+        <?php } ?>
+        </div>
         </div>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
         <script src="../assets/js/global.js" type="text/javascript"></script>

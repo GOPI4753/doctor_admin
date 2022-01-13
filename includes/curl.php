@@ -14,8 +14,8 @@ class droroscopeAdmin
     /**
      * Home url
      */
-    // const HOMEURL = 'https://droroscope.com/admin_2019';
-    const HOMEURL = 'http://doctor_admin.com/';
+    const HOMEURL = 'https://droroscope.com/admin_2019';
+    // const HOMEURL = 'http://doctor_admin.com/doctor_admin/';
 
     /**
      * The Dreamfactory Session id
