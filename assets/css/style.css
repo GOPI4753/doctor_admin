@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Sep, 2018, 5:31:37 PM
+    Author     : LSN-222
+*/
+
+#LoginForm{ 
+    background-image:url("../images/dr_login_bg.jpg"); 
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    padding:10px;
+    height: 100vh;
+}
+.login-main{ 
+    background-image: url(../images/dr_login_pattern.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-heading { color:#fff; font-size:23px;}
+.panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.login-form .form-control {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 35px;
+    line-height: 50px;
+}
+.main-div {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 10px;
+    margin: 10px 10px 10px 376px;
+    max-width: 38%;
+    padding: 35px 50px 52px 50px;
+}
+
+.login-form .form-group {
+    margin-bottom:10px;
+}
+.login-form{ text-align:center;}
+.forgot a {
+    color: #777777;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.login-form  .btn.btn-primary {
+    background: #f0ad4e none repeat scroll 0 0;
+    border-color: #f0ad4e;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    height: 36px;
+    /*line-height: 50px;*/
+    padding: 0;
+}
+.forgot {
+    text-align: left; margin-bottom:30px;
+}
+.botto-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin: auto;
+}
+.login-form .btn.btn-primary.reset {
+    background: #ff9900 none repeat scroll 0 0;
+}
+.back { text-align: left; margin-top:10px;}
+.back a {color: #444444; font-size: 13px;text-decoration: none;}
+
+
+.image-main-wrapper,.dr_old_image{
+    display: inline-block;
+    width: 335px;
+}
+.image-filter, .image-rename,.image-delele,.image-name{
+    display: block;
+    color: #0090e9;
+    font-size: 18px;
+    text-align: center;
+
+}
+.image-name{
+    margin-left: 62px;
+    margin-top: 7px;
+}
+.dr_old_image{
+    text-align: center;
+}
+.sumit_form{
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    /* margin-top: 11px; */
+    float: right;
+    top: 7px;
+    left: 0px;
+    position: relative;
+}
+.dr-takephoto{
+    width: 50px;
+}
+.img-thumbnail{
+    padding: 10px;
+}
